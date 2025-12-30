@@ -1,12 +1,9 @@
-import express from "express";
-import cors from "cors";
+const express = require("express");
 
 const app = express();
-app.use(cors());
-app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Backend chal raha hai 🚀");
+  res.send("Backend live hai 🚀");
 });
 
 const PORT = process.env.PORT || 3000;
